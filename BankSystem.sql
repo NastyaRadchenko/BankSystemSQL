@@ -52,39 +52,37 @@ CREATE TABLE BankClient(
 );
    
 INSERT INTO ClientStatus(StatusID, StatusName)
-VALUES (1, '��� �����');
+VALUES (1, 'Without benefits');
 INSERT INTO ClientStatus(StatusID, StatusName)
-VALUES (2, '������� �����');
+VALUES (2, 'Veteran of labour');
 INSERT INTO ClientStatus(StatusID, StatusName)
-VALUES (3, '�������');
+VALUES (3, 'Disabled person');
 INSERT INTO ClientStatus(StatusID, StatusName)
-VALUES (4, '����������� �����');
+VALUES (4, 'The large family');
 INSERT INTO ClientStatus(StatusID, StatusName)
-VALUES (5, '���������');
+VALUES (5, 'Pensioner');
 
-
 INSERT INTO City(CityID, CityName)
-VALUES (1, '������');
+VALUES (1, 'Polotsk');
 INSERT INTO City(CityID, CityName)
-VALUES (2, '������');
+VALUES (2, 'Mogilev');
 INSERT INTO City(CityID, CityName)
-VALUES (3, '�����');
+VALUES (3, 'Minsk');
 INSERT INTO City(CityID, CityName)
-VALUES (4, '�����');
+VALUES (4, 'Brest');
 INSERT INTO City(CityID, CityName)
-VALUES (5, '������');
-
+VALUES (5, 'Grodno');
 
 INSERT INTO Bank(BankID, BankName)
-VALUES (1, '��������');
+VALUES (1, 'Tinkoff');
 INSERT INTO Bank(BankID, BankName)
-VALUES (2, '������������');
+VALUES (2, 'Belarusbank');
 INSERT INTO Bank(BankID, BankName)
-VALUES (3, '��������');
+VALUES (3, 'Sberbank');
 INSERT INTO Bank(BankID, BankName)
-VALUES (4, '���������');
+VALUES (4, 'Alfabank');
 INSERT INTO Bank(BankID, BankName)
-VALUES (5, '���');
+VALUES (5, 'VTB');
 
 INSERT INTO Branch(BranchID, BankID, CityID)
 VALUES (1, 1, 1);
@@ -98,15 +96,15 @@ INSERT INTO Branch(BranchID, BankID, CityID)
 VALUES (5, 3, 2);
 
 INSERT INTO Client(ClientID, ClientName, ClientSurname, StatusID)
-VALUES (1, '���������', '�������', 1);
+VALUES (1, 'Vladislav', 'Makarov', 1);
 INSERT INTO Client(ClientID, ClientName, ClientSurname, StatusID)
-VALUES (2, '���������', '����������', 4);
+VALUES (2, 'Valentina', 'Prokofieva', 4);
 INSERT INTO Client(ClientID, ClientName, ClientSurname, StatusID)
-VALUES (3, '�������', '������', 3);
+VALUES (3, 'Alexei', 'Averin', 3);
 INSERT INTO Client(ClientID, ClientName, ClientSurname, StatusID)
-VALUES (4, '�����', '�������', 5);
+VALUES (4, 'Irina', 'Ivanova', 5);
 INSERT INTO Client(ClientID, ClientName, ClientSurname, StatusID)
-VALUES (5, '�������', '��������', 2);
+VALUES (5, 'Dmitriy', 'Vasiliev', 2);
 
 INSERT INTO BankClient(BankID, ClientID)
 VALUES (1, 2);
